@@ -9,17 +9,46 @@ body {
 }
 
 .container {
-    width: 100%;
-    min-height: 100vh;
+    background-color: #EEF5FF;
+    border-radius: 10%;
+    max-width: 500px;
+    max-height: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    gap: 10px;
+    margin: auto;
+    margin-top: 25vh;
 }
 
 .checker {
-    border: 2px solid whitesmoke;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info {
+    background-color: #F3EEEA;
+    max-width: 270px;
+    border: 2px solid whitesmoke;
+    border-radius: 5%;
+    padding: 5px;
+}
+
+.info-text {
+    color: #776B5D;
+    text-align: justify;
+}
+
+.not-palindrome {
+    background-color: red;
+    text-align: center;
+}
+
+.palindrome {
+    background-color: greenyellow;
+    text-align: center;
 }

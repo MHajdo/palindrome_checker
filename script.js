@@ -15,9 +15,9 @@ checkButton.addEventListener("click", () => {
         alert("Please input a value")
     } else if (palindromeChecker(textInput.value)) {
         resultDiv.innerHTML = `
-        <p><strong>${textInput.value}</strong> is a palindrome</p>`
+        <p class="palindrome"><strong>${textInput.value}</strong> is a palindrome</p>`
     } else {
         resultDiv.innerHTML = `
-        <p><strong>${textInput.value}</strong> is not a palindrome</p>`
+        <p class="not-palindrome"><strong>${textInput.value}</strong> is not a palindrome</p>`
     }
 })
